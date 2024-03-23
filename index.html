@@ -1,0 +1,734 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>format</title>
+<style>
+
+
+    body {
+      margin: 0%;
+       padding: 0%;
+  font-family: Arial Black, sans-serif;
+    }
+    
+ .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	position: unset;
+ }
+ .screen {		
+	height: 950px;
+	width: 750px;	
+	box-shadow: 0px 0px 24px #000000;
+}
+.screen__content {
+	z-index: 1;
+	position: relative;	
+	height: 100%;
+    
+}
+
+.img{
+
+    position: absolute;
+    width: 750px;
+    height: 500px;
+
+}
+
+.img1{
+top: 20px;
+left: 20px;
+position: absolute;
+width: 70px;
+height: 50px;
+z-index: 1;
+}
+
+.yellow1{
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  width: 40px;
+  height: 80px;
+  background-color: yellow;
+}
+.yellow2{
+    position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 40px;
+  height: 80px;
+  background-color: yellow;
+}
+
+.yellow3{
+    position: absolute;
+  top: 0%;
+  right: 60px;
+  width: 180px;
+  height: 220px;
+  background-color: yellow;
+}
+
+.yellow4{
+    position: absolute;
+  top: 60px;
+  left: 60px;
+  width: 50px;
+  height: 10px;
+  background-color: yellow;
+}
+
+.u{
+
+position: absolute;
+top: 60px;
+left: 57px;
+font-size: 71px;
+width: 20px;
+height: 20px;
+color: white;
+
+}
+.in{
+top: 365px;
+left: 90px;
+font-size: 60px;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+letter-spacing: 23px;
+  position: absolute;
+}
+.in1{
+top: 430px;
+left: 90px;
+font-size: 24px;
+font-family: Arial black;
+color: white;
+word-spacing: 7px;
+letter-spacing: 2px;
+  position: absolute;
+}
+.in2{
+top: 45px;
+right: 50px;
+font-size: 40px;
+font-family: Arial,black;
+font-weight: bold;
+color: white;
+position: absolute;
+text-align: end;
+z-index: 1;
+}
+
+.b{
+position: absolute;
+width: 750px;
+height: 500px;
+background-color: #027180ad;
+}
+
+.here{
+position: absolute;
+color: yellow;
+font-family: arial black;
+font-size: 75px;
+top: 500px;
+left: 83px;
+
+}
+.line{
+  position: absolute;
+background-color: #B3B3B3;
+  height: 3px;
+  width: 580px;
+  top: 600px;
+  left: 87px;
+}
+
+.our{
+  position: absolute;
+  font-size: 26px;
+  font-weight: lighter;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 610px;
+  left: 87px;
+}
+
+.our1{
+  position: absolute;
+  font-size: 26px;
+  font-weight: lighter;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 610px;
+  right:  173px;
+}
+.para1{
+  position: absolute;
+
+  font-family: Arial, Helvetica, sans-serif;
+  text-align-last: left;
+  top: 640px;
+  left: 87px;
+}
+.para2{
+  position: absolute;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  text-align-last: left;
+  top: 640px;
+  right: 50px;
+}
+.location{
+position: absolute;
+top: 865px;
+left: 90px;
+}
+.mail{
+position: absolute;
+top: 890px;
+left: 87px;
+}
+.phone{
+position: absolute;
+top: 865px;
+left: 340px;
+}
+
+.globle{
+position: absolute;
+top: 890px;
+left: 340px;
+}
+.ren{
+position: absolute;
+top: 875px;
+right: 35px;
+
+}
+.logotext{
+position: absolute;
+top: 875px;
+right: 110px;
+font-size: 30px;
+font-family: arial black;
+text-decoration: line-through white;
+}
+.square {
+  position: absolute;
+  top: 283px;
+  left: 361px;
+  border: 5px solid white;
+  height: 71px;
+  width: 40px;
+  background-color: rgba(0, 0, 0, 0);
+  border-left: 5px;
+  border-right: 5px;
+  z-index: 1;
+}
+
+.line1 {
+  position: absolute;
+  top: 334px;
+  left: 333px;
+  height: 4px;
+  width: 40px;
+  background-color: white;
+  rotate: 60deg;
+}
+.line2 {
+  position: absolute;
+  top: 301px;
+  left: 333px;
+  height: 4px;
+  width: 40px;
+  background-color: white;
+  rotate: -60deg;
+}
+.line3 {
+  position: absolute;
+  top: 334px;
+  left: 389px;
+  height: 4px;
+  width: 41px;
+  background-color: white;
+  rotate: -60deg;
+}
+.line5 {
+  position: absolute;
+  top: 297px;
+  left: 375px;
+  height: 43px;
+  width: 4px;
+  background-color: white;
+}
+.line6 {
+  position: absolute;
+  top: 297px;
+  left: 385px;
+  height: 43px;
+  width: 4px;
+  background-color: white;
+}
+.line7 {
+  position: absolute;
+  top: 300.9px;
+  left: 389px;
+  height: 4px;
+  width: 41px;
+  background-color: white;
+  rotate: 60deg;
+}
+.line8 {
+  position: absolute;
+  top: 307px;
+  left: 382px;
+  height: 4px;
+  width: 25px;
+  background-color: white;
+  rotate: 59deg;
+}
+.line9 {
+  position: absolute;
+  top: 326px;
+  left: 381px;
+  height: 4px;
+  width: 26px;
+  background-color: white;
+  rotate: -60deg;
+}
+.line10 {
+  position: absolute;
+  top: 307px;
+  left: 357px;
+  height: 4px;
+  width: 26px;
+  background-color: white;
+  rotate: -60deg;
+}
+.line11 {
+  position: absolute;
+  top: 326px;
+  left: 358px;
+  height: 4px;
+  width: 25px;
+  background-color: white;
+  rotate: 58deg;
+}
+
+
+
+@media only screen and (max-width:800px) {
+
+    body {
+      margin: 0%;
+       padding: 0%;
+         background: linear-gradient(90deg, #e0e0c7, #e0e0c7);		
+  font-family: Arial Black, sans-serif;
+    }
+
+    .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100%;
+	position: unset;
+ }
+ .screen {		
+	background: linear-gradient(to top, rgba(21, 0, 255, 0.619) 50%, rgba(55, 0, 255, 0.795) 50%);		
+	height:100%;
+	width: 100%;	
+	box-shadow: 0px 0px 24px #000000;
+	background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.screen__content {
+	z-index: 1;
+	position: relative;	
+	height: 100%;
+    
+}
+
+.img{
+left: 0px;
+position: absolute;
+width: 405px;
+height: 320px;
+overflow: hidden;
+
+}
+
+
+.yellow1{
+  position: absolute;
+  top: 840px;
+  right: 0px;
+  width: 20px;
+  height: 50px;
+  background-color: yellow;
+}
+.yellow2{
+    position: absolute;
+  top: 840px;
+  left: 0px;
+  width: 20px;
+  height: 50px;
+  background-color: yellow;
+}
+
+.yellow3{
+    position: absolute;
+  top: 0%;
+  left: 280px;
+  width: 110px;
+  height: 140px;
+  background-color: yellow;
+}
+
+.yellow4{
+    position: absolute;
+  top: 35px;
+  left: 42px;
+  width: 32px;
+  height: 7px;
+  background-color: yellow;
+}
+.u{
+
+position: absolute;
+font-size: 40px;
+color: white;
+top: 32px;
+left: 42px;
+}
+.in{
+top: 260px;
+left: 80px;
+font-size: 20px;
+font-family: Arial, Helvetica, sans-serif;
+color: white;
+letter-spacing: 15px;
+  position: absolute;
+}
+.in1{
+top: 285px;
+left: 80px;
+font-size: 9px;
+font-family: Arial black;
+color: white;
+word-spacing: 1.5px;
+letter-spacing: 2.3px;
+  position: absolute;
+}
+.b{
+position: absolute;
+width: 405px;
+height: 320px;
+background-color: #013b5ca9;
+}
+.in2{
+top: 30px;
+right: 55px;
+font-size: 25px;
+font-family: Arial,black;
+font-weight: bold;
+color: white;
+position: absolute;
+text-align: end;
+z-index: 1;
+}
+.here{
+position: absolute;
+color: #000000;
+font-family: arial black;
+font-size: 40px;
+top: 340px;
+left: 60px;
+
+}
+.line{
+  position: absolute;
+background-color: #B3B3B3;
+  height: 3px;
+  width: 306px;
+  top: 400px;
+  left: 60px;
+}
+.our{
+  position: absolute;
+  font-size: 26px;
+  font-weight: lighter;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 420px;
+  left: 60px;
+}
+
+.our1{
+  position: absolute;
+  font-size: 26px;
+  font-weight: lighter;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  top: 600px;
+  left:  60px;
+}
+.border1{
+  position: absolute;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align-last: justify;
+  top: 700px;
+  left: 87px;
+}
+.para1{
+  position: absolute;
+
+  font-family: Arial, Helvetica, sans-serif;
+  text-align-last: left;
+  top: 450px;
+  left: 60px;
+}
+.para2{
+  position: absolute;
+  
+  font-family: Arial, Helvetica, sans-serif;
+  text-align-last: left;
+  top: 630px;
+  right: 60px;
+}
+.location{
+position: absolute;
+top: 820px;
+left: 60px;
+}
+.mail{
+position: absolute;
+top: 837px;
+left: 60px;
+}
+.phone{
+position: absolute;
+top: 858px;
+left: 60px;
+}
+
+.globle{
+position: absolute;
+top: 875px;
+left: 60px;
+}
+.ren{
+position: absolute;
+top: 840px;
+right: 2px;
+
+}
+.logotext{
+position: absolute;
+top: 840px;
+right: 70px;
+font-size: 30px;
+font-family: arial black;
+text-decoration: line-through white;
+}
+.square {
+  position: absolute;
+  top: 200px;
+  left: 210px;
+  border: 5px solid white;
+  height: 50px;
+  width: 25px;
+  background-color: rgba(0, 0, 0, 0);
+  border-left: 5px;
+  border-right: 5px;
+  z-index: 1;
+}
+
+.line1 {
+  position: absolute;
+  top: 235px;
+  left: 192px;
+  height: 4px;
+  width: 28px;
+  background-color: white;
+  rotate: 60deg;
+}
+.line2 {
+  position: absolute;
+  top: 210px;
+  left: 192px;
+  height: 4px;
+  width: 29px;
+  background-color: white;
+  rotate: -60deg;
+}
+.line3 {
+  position: absolute;
+  top: 235px;
+  left: 227px;
+  height: 4px;
+  width: 29px;
+  background-color: white;
+  rotate: -60deg;
+}
+.line5 {
+  position: absolute;
+  top: 213px;
+  left: 220px;
+  height: 25px;
+  width: 3px;
+  background-color: white;
+}
+.line6 {
+  position: absolute;
+  top: 213px;
+  left: 225px;
+  height: 25px;
+  width: 3px;
+  background-color: white;
+}
+.line7 {
+  position: absolute;
+  top: 210px;
+  left: 227px;
+  height: 4px;
+  width: 28px;
+  background-color: white;
+  rotate: 60deg;
+}
+.line8 {
+  position: absolute;
+  top: 220px;
+  left: 223px;
+  height: 3px;
+  width: 17px;
+  background-color: white;
+  rotate: 59deg;
+}
+.line9 {
+  position: absolute;
+  top: 230px;
+  left: 225px;
+  height: 3px;
+  width: 13px;
+  background-color: white;
+  rotate: -52deg;
+}
+.line10 {
+  position: absolute;
+  top: 219px;
+  left: 210px;
+  height: 3px;
+  width: 15px;
+  background-color: white;
+  rotate: -60deg;
+}
+.line11 {
+  position: absolute;
+  top: 230px;
+  left: 211px;
+  height: 3px;
+  width: 13px;
+  background-color: white;
+  rotate: 58deg;
+}
+
+}
+
+</style>
+</head>
+
+
+
+<body>
+        <div class="container">
+        <div class="screen">
+		<div class="screen__content">
+		<div><img src="logo1.jpg" class="img" >
+
+<div class="b"> </div>
+<div class="img1"></div>
+<div class="square"></div>
+<div class="line1"></div>
+<div class="line2"></div>
+<div class="line3"></div>
+<div class="line5"></div>
+<div class="line5"></div>
+
+<div class="line6"></div>
+
+<div class="line7"></div>
+
+<div class="line8"></div>
+<div class="line9"></div>
+
+<div class="line10"></div>
+<div class="line11"></div>
+
+
+      <div style="text-align: inherit;">
+        <div class="in"> INNOVATION</div>
+        <div class="in1"> OUR SERVICES AS YOUR GUIDELINE</div>
+        
+
+        <div class="in2">
+          <div> CORPORATE </div>
+          <div> BUSINESS </div>
+          <div> FLYER </div>
+          </div>
+          </div>
+        </div>
+        <div>
+          <div class="here"> HERE WE GO !</div>
+          <div class="line"></div>
+          <div class="our">OUR <b style="color: #027180ad; ">SERVICES </b></div>
+          <div style="font-size: 13.5px;">
+          <div class="para1">Lorem ipsum detur artet minimum abernam rep<br>eated mum ber omittamise tollit dia lores it set<br>  chom seasoned sanctis quaestio ex quo Prodo<br>  hendrerit pro ne.Has ex allemum phantrum <br> sultratate se laudem art eam. Propriae tincidunt<br> sit no utamul gubergren vim su esam partem <br> del nis constituam</div>
+          
+          <div class="our1">OUR <b style="color: #027180ad; ">PLANS </b></div>
+          <div class="para2">Lorem ipsum dolor sit amet, minimum apeman<br> mprimique et and eum liberottam Pos tollit <br> dolores id vishet chom see no sonet sanctus<br>  quaestio e que frobo nendrerit pro ne. Has<br>  ex allenum phaedrum vulputate, veri<br>  Lauders ad eam. Propriae tincidunt sa no<br>  utamur gubergren vim eu. Ex eam partem<br>  dele niti constituan</div>
+        </div>
+          </div>
+          <div>
+            <i class="fa fa-map-marker location" style="font-size:15px; color: #000000;" >&nbsp; &nbsp; London Pawal, 12B/A</i>
+            <i class="glyphicon glyphicon-envelope mail" style="font-size:15px; color: #000000;" > contact@email.com</i>
+            <i class="fa fa-phone phone" style="font-size: 15px; color: #000000;">&nbsp; &nbsp; [012] 345 678</i>
+            <span class="fa fa-globe globle" style="color: #000000; font-size: 15px; " >&nbsp;&nbsp;  www.busness.com</span>
+            <i class="fa fa-renren ren" style="font-size: 40px; color: #000000; ">&nbsp; &nbsp; </i>
+             <p class="logotext">LOGO</p>
+          </div>
+            <div class="yellow3"> </div>
+            <div class="yellow4">
+            </div>
+           
+            <div class="u" >U+</div>
+<div class="logo"><img src="logo.jp"> </div>
+            <div>
+            <div class="yellow1"> </div>
+            <div class="yellow2"> </div>
+        
+        </div>
+            
+			</div>
+		</div>
+  
+
+
+		</body>
+		</html>
